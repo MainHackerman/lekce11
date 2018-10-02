@@ -15,5 +15,5 @@ while True:
         print('vysledek je: ', vysledek)
         break
 
-nasobek = cislo * 37
+nasobek = cislo * 27
 print(nasobek)
