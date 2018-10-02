@@ -7,7 +7,7 @@ vstup = input('Zadej cislo: ')
 try:
     cislo = int(vstup)
     vysledek = 100 / cislo
-except ValueError:
+except (ValueError, ZeroDivisionError):
     print('Zadala jsi blbost.')
-except ZeroDivisionError:
-    print('Nemuzes zadat 0.')
+finally:
+    print('Dekujeme ze pouzavet nasi aplikaci')
